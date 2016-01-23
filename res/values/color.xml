@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="common_gray_text">#ff4c4c4c</color>
+     <color name="white">#ffffffff</color>
+     <color name="line">#ffcbcbcb</color>
+     <color name="background">#ffeeeeee</color>
+     
+     <color name="common_bg">#fcfcfc</color>
+     <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+     <color name="common_bottom_bar_selected_bg">#161718</color>
+     <color name="bottom_bar_normal_bg">#EEEEEE</color>
+     <color name="main_bottom_text_color">#777777</color>
+     <color name="red">#E22C37</color>
+     <color name="common_bottom_bar_blue">#2ea7e0</color> 
+     <color name="main_common_title_bg">#2E3238</color>
+     <color name="error_item_color">#F6EBE6</color>
+</resources>

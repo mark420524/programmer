@@ -1,0 +1,50 @@
+<resources>
+
+    <string name="app_name">程序员</string>
+	<string name="qqlogin">腾讯QQ</string>
+	<string name="weibologin">新浪微博</string>
+	<string name="weixinlogin">微信</string>
+	
+	<string name="mobilelogin">手机号</string>
+	<string name="kaixinlogin">开心网</string>
+	
+	<string name="programmer">程序员</string>
+	<string name="contact">通讯录</string>
+	<string name="mine">我</string>
+	
+	<string name="unreadNum">0</string>
+	
+	<string name="network_anomalies">Network is not available, please check the network!</string>
+    <string name="User_already_exists">User already existed!</string>
+    <string name="registration_failed_without_permission">Registration failed, without permission!</string>
+    <string name="Registration_failed">Registration failed:</string>
+    <string name="illegal_user_name">Illegal user name</string>
+    
+    <string name="exception">Oh,my god,exception!!</string>
+    
+    <string name="dialogOne">弹出框1</string>
+    <string name="dialogTwo">弹出框2</string>
+    <string name="dialogThree">弹出框3</string>
+    <string name="dialogFour">弹出框4</string>
+    <string name="dialogFive">弹出框5</string>
+    <string name="dialogSix">弹出框6</string>
+    <string name="loginIng">正在登陆&#8230;</string>
+    <string name="loadimg">loadimg</string>
+    <string name="networkError">网络故障</string>
+    
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="recording_video">录制视频</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="voice">[语音}</string>
+    
+    <string name="Cant_chat_with_yourself">cannot chat with yourself</string>
+    <string name="delete_message">删除消息</string>
+    <string name="delete_conversation">删除会话</string>
+    <string name="delete_conversation_messages">删除会话和消息</string>
+</resources>
+

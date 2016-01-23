@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background" style="@style/scrollview"
+    >
+
+    <LinearLayout
+        style="@style/fi_fi"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:id="@+id/mobilelogin"
+            android:text="@string/mobilelogin"
+            style="@style/mobile_login_style"
+            android:layout_marginTop="10.0dip"
+            android:onClick="selectLogin"
+            android:clickable="true"
+            />
+        
+        <TextView 
+            android:id="@+id/weixinlogin"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/weixinlogin"
+            style="@style/weixin_login_style"
+            android:onClick="selectLogin"
+            android:clickable="true"
+            />
+         <View style="@style/line" />
+        
+        <TextView 
+            android:id="@+id/qqlogin"
+            android:text="@string/qqlogin"
+            style="@style/qq_login_style"
+            android:onClick="selectLogin"
+            android:clickable="true"
+            />
+         <View style="@style/line" />
+         <TextView 
+            android:id="@+id/weibologin"
+            android:text="@string/weibologin"
+            style="@style/weibo_login_style"
+            android:onClick="selectLogin"
+            android:clickable="true"
+            />
+         <View style="@style/line" />
+         <TextView 
+            android:id="@+id/kaixinlogin"
+            android:text="@string/kaixinlogin"
+            style="@style/kaixin_login_style"
+            android:onClick="selectLogin"
+            android:clickable="true"
+            />
+    </LinearLayout>
+</ScrollView>

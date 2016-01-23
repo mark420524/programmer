@@ -1,0 +1,130 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
+    </style>
+    <!--  You cannot combine custom titles with other title features 需要设置android:windowActionBar -->
+    <style name="mainTitle" parent="@style/AppBaseTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTitleSize">50dp</item>
+    </style>
+    <style name="AnimFade2" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
+    </style>
+    
+    <style name="programTheme" parent="@android:style/Theme.NoTitleBar"></style>
+ 	<style name="fi_fi">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="fi_wr">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wr_wr">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="scrollview" parent="@style/fi_fi">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+    <style name="common_gray_16_fi" parent="@style/fi_wr">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/common_gray_text</item>
+    </style>
+    <style name="user_style" parent="@style/common_gray_16_fi">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:drawableRight">@drawable/more</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="qq_login_style" parent="@style/user_style">
+        <item name="android:drawableLeft">@drawable/qq</item>
+    </style>
+    <style name="weibo_login_style" parent="@style/user_style">
+        <item name="android:drawableLeft">@drawable/weibo</item>
+    </style>
+    <style name="weixin_login_style" parent="@style/user_style">
+        <item name="android:drawableLeft">@drawable/weixin</item>
+    </style>
+    <style name="mobile_login_style" parent="@style/user_style">
+        <item name="android:drawableLeft">@drawable/reg_phone</item>
+    </style>
+    <style name="kaixin_login_style" parent="@style/user_style">
+        <item name="android:drawableLeft">@drawable/kaixin</item>
+    </style>
+    <style name="line">
+        <item name="android:background">@color/line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+    </style>
+    
+    <style name="horizontal_slide" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimFade2</item>
+    </style>
+    
+    <style name="main_bootom" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">@color/bottom_bar_normal_bg</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    
+    <style name="container_relative">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    <style name="bottom_button" parent="@style/fi_fi">
+        <item name="android:background">@color/bottom_bar_normal_bg</item>
+        <item name="android:onClick">onButtonClicked</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:scaleType">matrix</item>
+		<item name="android:textSize">12sp</item>        
+    </style>
+    
+    <style name="bottom_textview" parent="@style/wr_wr">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowNoTitle">true</item>   
+        <item name="android:windowBackground">@drawable/loading_bg</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+    </style>  
+    <style name="main_title_style" >
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">@color/main_common_title_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+</resources>

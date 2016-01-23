@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/mainLayout"
+    android:background="@color/common_bg">
+	<LinearLayout 
+	    android:id="@+id/main_bottom"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    style="@style/main_bootom" >
+	    
+	    <RelativeLayout 
+	        android:id="@+id/btn_container_programmer"
+	        style="@style/container_relative">
+	        <Button 
+	            android:id="@+id/btn_programmer"
+	            style="@style/bottom_button"
+	            android:drawableTop="@drawable/tab_chat_bg"
+	            android:text="@string/programmer"
+	            android:textColor="@color/home_bottom_text_color"
+	            />
+	        <TextView 
+	            android:id="@+id/unread_msg_number"
+	            style="@style/bottom_textview"
+	            android:background="@drawable/unread_count_bg"
+	            android:gravity="center"
+	            android:text="@string/unreadNum"
+	            android:textSize="12sp"
+	            android:textColor="@android:color/white"
+	            />
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:id="@+id/btn_container_contact"
+	        style="@style/container_relative" >
+	        <Button 
+	            android:id="@+id/btn_contact"
+	            style="@style/bottom_button"
+	            android:drawableTop="@drawable/tab_contact_list_bg"
+	            android:text="@string/contact"
+	            android:textColor="@color/home_bottom_text_color"
+	            />
+	        <TextView 
+	            android:id="@+id/unread_contact_number"
+	            style="@style/bottom_textview"
+	            android:background="@drawable/unread_dot"
+	            />
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:id="@+id/btn_container_mine"
+	        style="@style/container_relative" >
+	        <Button 
+	            android:id="@+id/btn_mine"
+	            style="@style/bottom_button"
+	            android:drawableTop="@drawable/tab_mine_bg"
+	            android:text="@string/mine"
+	            android:textColor="@color/home_bottom_text_color"
+	            />
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+	<RelativeLayout
+        android:id="@+id/fragment_container"
+        style="@style/fi_fi"
+        android:layout_above="@id/main_bottom"
+        />
+</RelativeLayout>

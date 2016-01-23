@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="26dp"
+        android:onClick="buttonClick"
+        android:text="@string/dialogOne" />
+
+    <Button
+        android:id="@+id/buttonTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonOne"
+        android:layout_marginLeft="44dp"
+        android:layout_toRightOf="@+id/buttonOne"
+        android:onClick="buttonClick"
+        android:text="@string/dialogTwo" />
+
+    <Button
+        android:id="@+id/buttonThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonOne"
+        android:layout_below="@+id/buttonOne"
+        android:layout_marginTop="26dp"
+        android:onClick="buttonClick"
+        android:text="@string/dialogThree" />
+
+    <Button
+        android:id="@+id/buttonFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonThree"
+        android:layout_alignBottom="@+id/buttonThree"
+        android:layout_alignLeft="@+id/buttonTwo"
+        android:onClick="buttonClick"
+        android:text="@string/dialogFour" />
+
+    <Button
+        android:id="@+id/buttonFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonThree"
+        android:layout_below="@+id/buttonThree"
+        android:onClick="buttonClick"
+        android:layout_marginTop="45dp"
+        android:text="@string/dialogFive" />
+
+    <Button
+        android:id="@+id/buttonSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonFive"
+        android:layout_alignLeft="@+id/buttonFour"
+        android:onClick="buttonClick"
+        android:text="@string/dialogSix" />
+<!-- 
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="62dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button7"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_alignRight="@+id/button6"
+        android:text="Button" />
+ -->
+</RelativeLayout>
